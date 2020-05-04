@@ -1,0 +1,10 @@
+  database:
+    image: postgres
+    volumes:
+      - ./data:/custom/mount
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: helloo
+      POSTGRES_PASSWORD: toor
+      POSTGRES_DB: db_helloo
